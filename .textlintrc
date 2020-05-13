@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
+    "@textlint-ja/no-synonyms": true,
+    "@textlint-rule/textlint-rule-no-unmatched-pair": true,
+    "no-dropping-the-ra": true,
+    "no-doubled-joshi": true,
+    "no-doubled-conjunction": true,
+    "no-doubled-conjunctive-particle-ga": true,
+    "no-hankaku-kana": true,
+    "prefer-tari-tari": true,
+    "spellcheck-tech-word": true,
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-hiragana-keishikimeishi": true,
+    "ja-no-abusage": true,
+    "ja-no-mixed-period": true,
+    "ja-unnatural-alphabet": true,
+    "ja-no-redundant-expression": true,
+    "textlint-rule-single-three-dots": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "setup": "cd textlint-rule-single-three-dots && npm install && npm link && cd .. && npm link textlint-rule-single-three-dots",
+    "lint": "textlint  -f pretty-error article.md"
+  },
+  "devDependencies": {
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^1.0.1",
+    "@textlint-ja/textlint-rule-no-synonyms": "^1.0.2",
+    "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.7",
+    "sudachi-synonyms-dictionary": "^5.0.0",
+    "textlint": "^11.6.3",
+    "textlint-rule-ja-hiragana-fukushi": "^1.2.0",
+    "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
+    "textlint-rule-ja-hiragana-keishikimeishi": "^1.0.2",
+    "textlint-rule-ja-no-abusage": "^2.0.1",
+    "textlint-rule-ja-no-mixed-period": "^2.1.1",
+    "textlint-rule-ja-no-redundant-expression": "^3.0.1",
+    "textlint-rule-ja-unnatural-alphabet": "^2.0.1",
+    "textlint-rule-ja-yahoo-kousei": "^1.0.3",
+    "textlint-rule-max-ten": "^2.0.3",
+    "textlint-rule-no-doubled-conjunction": "^1.0.2",
+    "textlint-rule-no-doubled-conjunctive-particle-ga": "^1.1.0",
+    "textlint-rule-no-doubled-joshi": "^3.7.2",
+    "textlint-rule-no-dropping-the-ra": "^1.1.2",
+    "textlint-rule-no-hankaku-kana": "^1.0.2",
+    "textlint-rule-prefer-tari-tari": "^1.0.3",
+    "textlint-rule-sentence-length": "^2.2.0",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0",
+    "textlint-rule-single-three-dots": "1.0.0"
+  },
+  "dependencies": {}
+}

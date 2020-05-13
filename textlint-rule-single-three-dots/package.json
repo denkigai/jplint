@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "devDependencies": {
+    "textlint-scripts": "^3.0.0",
+    "textlint-tester": "^5.1.15"
+  },
+  "dependencies": {
+    "match-index": "^1.0.1",
+    "textlint-rule-helper": "^1.1.5"
+  },
+  "name": "textlint-rule-single-three-dots",
+  "description": "rule for accepts only single three dots",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
