@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "setup": "cd textlint-rule-single-three-dots && npm install && npm link && cd .. && npm link textlint-rule-single-three-dots",
-    "lint": "textlint  -f pretty-error article.md"
+    "preinstall": "cd textlint-rule-single-three-dots && npm run build && cd .."
   },
   "devDependencies": {
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^1.0.1",
@@ -27,5 +26,8 @@
     "textlint-rule-prefer-tari-tari": "^1.0.3",
     "textlint-rule-sentence-length": "^2.2.0",
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
+  },
+  "dependencies": {
+    "textlint-rule-single-three-dots": "./textlint-rule-single-three-dots"
   }
 }
