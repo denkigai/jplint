@@ -17,10 +17,16 @@
     "ja-no-mixed-period": true,
     "ja-unnatural-alphabet": true,
     "ja-no-redundant-expression": true,
-    "spellcheck-tech-word": true,
     "textlint-rule-single-three-dots": true,
     "textlint-rule-ng-word": {
       "words": ["slack", "github"]
-    }
-  }
+    },
+    "general-novel-style-ja": {
+        "chars_leading_paragraph": false,
+        "space_after_marks": false,
+        "even_number_ellipsises": false,
+        "max_arabic_numeral_digits": false
+      }  
+    },
+    "preset-jtf-style": true
 }
