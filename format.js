@@ -4,8 +4,18 @@ const fs = require("fs");
 const contents = fs.readFileSync("article.md", { encoding: "utf-8" });
 const output = contents
   .split("\n")
-  .map((line) => line.concat("  "))
-  .join("\n");
+  .filter((line) => line !== "")
+  .map((line, i) => {
+    if (i !== 0 && line.startsWith("####")) {
+      return "\n".concat(line, "<br/>");
+    }
+    if (i !== 0 && line.startsWith("#")) {
+      return "\n".concat(line);
+    }
+    return line.concat("<br/>");
+  })
+  .filter((line) => line !== "\n")
+  .join("");
 
 const outFile = "notion.md";
 console.log("Outputing File: " + outFile);
